@@ -18,74 +18,75 @@
 // একটি Developer অবজেক্ট তৈরি করো (নাম: “Mitu”, সেলারি: 60000, ল্যাংগুয়েজ: “Kotlin”)।
 // তাদের displayInfo() কল করো।
 
-import 'dart:ffi';
-
-class Employee{
+class Employee {
   String? _name;
   double? _salary;
 
   Employee(this._name, this._salary);
 
-  String getName(){
+  String getName() {
     return _name!;
   }
-  double getSalary(){
+
+  double getSalary() {
     return _salary!;
   }
 
-  void setName(String name){
+  void setName(String name) {
     this._name = name;
   }
-  void setSalary(double salary){
+
+  void setSalary(double salary) {
     this._salary = salary;
   }
 
-  void displayInfo(){
+  void displayInfo() {
     print("Employee name is $_name");
     print("Salary is $_salary");
   }
 }
 
-class Manager extends Employee{
+class Manager extends Employee {
   String? _department;
   Manager(this._department, String name, double salary) : super(name, salary);
 
-  String getDepartment(){
+  String getDepartment() {
     return _department!;
   }
 
-  void setDepartment(String department){
+  void setDepartment(String department) {
     this._department = department;
   }
 
-  void displayInfo(){
+  void displayInfo() {
     print("Manager name is $_name");
     print("Salary is $_salary");
     print("Department : $_department");
   }
 }
 
-class Developer extends Employee{
+class Developer extends Employee {
   String? _programmingLanguage;
 
-  Developer(this._programmingLanguage, String name, double salary) : super(name, salary);
+  Developer(this._programmingLanguage, String name, double salary)
+    : super(name, salary);
 
-  String getProgrammingLanguage(){
+  String getProgrammingLanguage() {
     return _programmingLanguage!;
   }
 
-  void setProgrammingLanguage(String programmingLanguage){
+  void setProgrammingLanguage(String programmingLanguage) {
     this._programmingLanguage = programmingLanguage;
   }
 
-  void displayInfo(){
+  void displayInfo() {
     print("Developer name is $_name");
     print("Developer salary is $_salary");
     print("Programming Language is $_programmingLanguage");
   }
 }
 
-void main(){
+void main() {
   Manager manager = Manager("HR", "Abir", 30000);
   manager.displayInfo();
 
