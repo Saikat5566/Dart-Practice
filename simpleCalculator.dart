@@ -1,13 +1,13 @@
 import 'dart:io';
 void main() {
-  print("Enter First Number :");
-  int num = int.parse(stdin.readLineSync()!);
+  List<String> number = stdin.readLineSync()!.split(" ");
+  int num = int.parse(number[0]);
 
-  print("Enter Second Number :");
-  int num2 = int.parse(stdin.readLineSync()!);
+  List<String> operators = stdin.readLineSync()!.split(" ");
+  String operator = operators[0];
 
-  print("+,-,*,/,%");
-  String operator = stdin.readLineSync()!;
+  List<String> number2 = stdin.readLineSync()!.split(" ");
+  int num2 = int.parse(number2[1]);
 
   if(operator == "+"){
     print(num+num2);

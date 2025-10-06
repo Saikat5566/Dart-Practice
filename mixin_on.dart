@@ -124,14 +124,41 @@
 //   Smartphone smartphone = Smartphone();
 //   smartphone.connectWifi("TP Link");
 // }
+//
 
 
+//একটা Animal class বানাও। তারপর দুটি mixin বানাও:
+//CanSwim → একটি method swim() থাকবে, যা প্রিন্ট করবে "I can swim"
+//CanFly → একটি method fly() থাকবে, যা প্রিন্ট করবে "I can fly"
+//Duck class বানাও, যেটা Animal extend করবে এবং CanSwim, CanFly mixin use করবে।
+//main() ফাংশনে Duck object তৈরি করে swim() এবং fly() method কল করো।
 
 
-
-
-
-
+// class Animal {
+//
+// }
+//
+// mixin CanSwim{
+//   void swim(){
+//     print("I can Swim");
+//   }
+// }
+//
+// mixin CanFly{
+//   void fly(){
+//     print("I can Fly");
+//   }
+// }
+//
+// class Duck extends Animal with CanSwim, CanFly{
+//
+// }
+//
+// void main(){
+//   Duck duck = Duck();
+//   duck.swim();
+//   duck.fly();
+// }
 
 
 
